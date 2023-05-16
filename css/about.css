@@ -1,0 +1,18 @@
+.photo {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.content {
+    min-height: 500px;
+}
+
+.info {
+    display: flex;
+    text-align: justify;
+}
+
+.info__element {
+    padding: 10px;
+}
