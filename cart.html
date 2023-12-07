@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/about.css">
-    <title>О нас</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Новости</title>
 </head>
 
 <body>
@@ -30,30 +30,19 @@
         </ul>
     </nav>
     <main class="content">
-        <h1 class="title">О НАС</h1>
-        <div class="info">
-        <img src="img/me.jpg" alt="Фотография автора" class="photo info__element">
-            <div class="wrapper info__element">
-                <h2>Семенов Семён Вячеславович</h2>
-                <p>Закончил колледж связи Поволжского государственного университета
-                    телекоммуникаций и информатики по специальности "Программирование в компьютерных системах".
-                </p>
-                <p>
-                    Родился 22 Августа 2001 года в Самаре. С начальной школы учился играть на фортепиано, а позже стал заниматься
-                    на гитаре.
-                    В 2020 году купил свою первую электрогитару Epiphone LP100.
-                </p>
-            </div>
-        </div>
-        <div class="info">
-        <img src="img/danya.jpg" alt="Фотография автора" class="photo info__element">
-            <div class="wrapper info__element">
-                <h2>Никоненко Даниил Андреевич</h2>
-                <p>
-                    Биография: родился, пожил, умер
-                </p>
-            </div>
-        </div>
+        <h1 class="title">КОРЗИНА</h1>
+        <table id="cart-table" class="table"></table>
+        <p id="sum">Итого: </p>
+        <button onClick="clearCart()">Очистить корзину</button>
+        <script src="js/cart.js"></script>
+        <form>
+            <h2>Оформление заказа</h2>
+            <div class="form__div1">ФИО: <input type="text"></div>
+            <div class="form__div1">Email: <input type="email"></div>
+            <div class="form__div1">Номер телефона: <input type="number"></div>
+            <div class="form__div1">Адрес доставки: <input type="text"></div>
+            <button>Оформить заказ</button>
+        </form>
     </main>
     <footer class="footer">
         <nav class="navigation navigation--foot">
